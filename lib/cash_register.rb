@@ -28,11 +28,14 @@ class CashRegister
        @total -= @total * @discount / 100
        return "After the discount, the total comes to $#{@total}"
 
-else
-  "THere"
+      else
+        "There is no discount to apply"
    end
 
   #  def reduces_total
   #    @total = @total.reduce
   #  end
+end
+def items
+   @cart
 end
