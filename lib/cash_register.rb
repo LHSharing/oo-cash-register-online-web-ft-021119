@@ -16,6 +16,6 @@ class CashRegister
    end
 
    def reduces_total
-     
+     @total = @total.reduce
    end
 end
