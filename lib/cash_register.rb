@@ -7,9 +7,20 @@ class CashRegister
      @discount = discount
    end
 
+
+
    def add_item(item, price, quantity = 1)
-     @total += price * quantity
+       @total += price * quantity
+       quantity.times do
+         @cart << item
+       end
+       @last_transaction = price * quantity
    end
+
+
+
+
+
    def apply_discount
      @total = @total - (@total * (@discount/100.00))
      return "After the discount, the total comes to $#{total.to_i}."
