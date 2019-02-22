@@ -15,5 +15,7 @@ class CashRegister
      return "After the discount, the total comes to $#{total.to_i}."
    end
 
-  ?
+  #  def reduces_total
+  #    @total = @total.reduce
+  #  end
 end
